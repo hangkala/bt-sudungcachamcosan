@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt('Nhập 1 dãy số');
+    let str = num.toString();
+    let kq = [str[0]];
+    for (let i = 0; i < str.length; i++){
+        if ((str[i] % 2 === 0)&&(str[i+1] % 2 === 0)) {kq.push('-'+str[i+1]);}
+        else {kq.push(str[i+1]);}}
+    alert(kq.join(''));
+
+</script>
+</body>
+</html>

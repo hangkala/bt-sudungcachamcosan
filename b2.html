@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt('Nhập chiều dài của mảng'));
+    let arr = [];
+    let kq = [];
+    for (let i = 0; i < n; i++){
+        arr[i] = parseInt(prompt('Nhập số thứ ' +i));
+        if ((arr[i] % 2 === 0)&&(arr[i-1]%2 === 0)) {kq.push("-"+arr[i]);}
+        else kq.push(arr[i]);
+    }
+    alert(kq);
+</script>
+</body>
+</html>
